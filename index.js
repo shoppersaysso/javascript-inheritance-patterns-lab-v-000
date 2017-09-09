@@ -55,11 +55,7 @@ Polygon.prototype.perimeter = function() {
 }
 
 Polygon.prototype.numberOfSides = function() {
-  var s = 0;
-  for(var i=0;i< this.sides; i++) {
-    s += this.sides[i];
-  }
-  return(s);
+  return(this.sides.length);
 }
 
 function Quadrilateral(sides) {
