@@ -54,6 +54,14 @@ Polygon.prototype.perimeter = function() {
   return(p);
 }
 
+Polygon.prototype.perimeter = function() {
+  var p = 0;
+  for(var i=0;i< this.sides.length; i++) {
+    p += this.sides[i].length;
+  }
+  return(p);
+}
+
 function Quadrilateral(sides) {
   Shape.call(this);
   this.sides = sides;
