@@ -7,6 +7,10 @@ function Point(x, y) {
     return("(" + this.x + "," + this.y + ")");
   }
 
+function Side(length) {
+  this.length = length;
+}
+
 function Shape() {}
 
 Shape.prototype.addToPlane = function(x, y) {
