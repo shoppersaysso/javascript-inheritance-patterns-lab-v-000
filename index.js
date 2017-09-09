@@ -78,6 +78,6 @@ Rectangle.prototype.area = function() {
 }
 
 function Square(side) {
-  Rectangle.call(this[new Side(side), new Side(side), new Side(side), new Side(side)]);
+  Rectangle.call(this, [new Side(side), new Side(side), new Side(side), new Side(side)]);
   this.side = side;
 }
