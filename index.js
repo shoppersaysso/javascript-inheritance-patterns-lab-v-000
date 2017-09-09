@@ -31,3 +31,6 @@ Circle.prototype.constructor = Circle;
 Circle.prototype.diameter = function() {
   return(this.radius*2);
 }
+Circle.prototype.circumference = function() {
+  
+}
