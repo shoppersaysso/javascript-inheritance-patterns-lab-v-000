@@ -6,3 +6,7 @@ function Point(x, y) {
   Point.prototype.toString = function(x, y) {
     return("(" + this.x + "," + this.y + ")");
   }
+
+function Shape() {
+  
+}
