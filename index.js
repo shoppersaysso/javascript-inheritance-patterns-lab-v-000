@@ -8,5 +8,6 @@ function Point(x, y) {
   }
 
 function Shape(x, y) {
-  this.
+  this.x = 0;
+  this.y = 0;
 }
