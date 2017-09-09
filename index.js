@@ -7,6 +7,6 @@ function Point(x, y) {
     return("(" + this.x + "," + this.y + ")");
   }
 
-function Shape() {
-  
+function Shape(x, y) {
+  this.
 }
