@@ -40,5 +40,10 @@ Circle.prototype.circumference = function() {
 
 function Polygon(sides) {
   Shape.call(this);
-  this.sides = sides
+  this.sides = sides;
+}
+
+function Quadrilateral(sides) {
+  Shape.call(this);
+  this.sides = sides;
 }
