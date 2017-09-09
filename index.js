@@ -1,4 +1,4 @@
-function Point( {
+function Point() {
   this.x = x;
   this.y = y;
 }
