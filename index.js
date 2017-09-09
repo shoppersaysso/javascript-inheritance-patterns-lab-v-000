@@ -16,3 +16,7 @@ Shape.prototype.addToPlane = function(x, y) {
 Shape.prototype.move = function(x, y) {
   this.position = new Point(x, y);
 }
+
+function Circle() {
+  Shape.call(this)
+}
