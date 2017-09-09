@@ -44,6 +44,13 @@ function Polygon(sides) {
   this.sides = sides;
 }
 
+Circle.prototype = Object.create(Shape.prototype);
+Circle.prototype.constructor = Circle;
+Circle.prototype.diameter = function() {
+  return(this.radius * 2);
+}
+
+
 function Quadrilateral(sides) {
   Shape.call(this);
   this.sides = sides;
