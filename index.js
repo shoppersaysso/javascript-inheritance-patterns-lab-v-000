@@ -76,3 +76,7 @@ Rectangle.prototype.constructor = Rectangle;
 Rectangle.prototype.area = function() {
   return(this.width * this.height);
 }
+
+function Square(side) {
+  Polygon.call(this, [new Side(sideOneLength), new Side(sideTwoLength), new Side(sideThreeLength), new Side(sideFourLength)]);
+}
