@@ -54,12 +54,12 @@ Polygon.prototype.perimeter = function() {
   return(p);
 }
 
-Polygon.prototype.perimeter = function() {
-  var p = 0;
-  for(var i=0;i< this.sides.length; i++) {
-    p += this.sides[i].length;
+Polygon.prototype.numberOfSides = function() {
+  var s = 0;
+  for(var i=0;i< this.sides; i++) {
+    s += this.sides[i];
   }
-  return(p);
+  return(s);
 }
 
 function Quadrilateral(sides) {
