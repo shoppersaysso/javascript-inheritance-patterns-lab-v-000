@@ -86,12 +86,12 @@ Rectangle.prototype.area = function() {
 }
 
 function Square(side) {
-  Rectangle.call(this, [new Side(side), new Side(side), new Side(side), new Side(side)]);
+  Rectangle.call(this, side, side);
   this.side = side;
 }
 
 Square.prototype = Object.create(Rectangle.prototype);
 Square.prototype.contructor = Square;
 Square.prototype.listProperties = function() {
-
+  return()
 }
