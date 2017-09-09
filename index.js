@@ -65,11 +65,9 @@ function Quadrilateral(sideOneLength, sideTwoLength, sideThreeLength, sideFourLe
 Quadrilateral.prototype = Object.create(Polygon.prototype);
 Quadrilateral.prototype.constructor = Quadrilateral;
 
-function Rectangle(longSide, shortSide) {
-  Quadrilateral.call(this, [new Side(longSide), new Side(shortSide), new Side(longSide), new Side(shortSide)])
+function Rectangle(width, height) {
+  Quadrilateral.call(this, [new Side(width), new Side(height), new Side(width), new Side(height)])
 }
 
 Rectangle.prototype = Object.create(Quadrilateral.prototype);
 Rectangle.prototype.constructor = Rectangle;
-
-
