@@ -66,10 +66,10 @@ Quadrilateral.prototype = Object.create(Polygon.prototype);
 Quadrilateral.prototype.constructor = Quadrilateral;
 
 function Triangle(sideOneLength, sideTwoLength, sideThreeLength) {
-  Quadrilateral.call(this, [new Side(sideOneLength), new Side(sideTwoLength), new Side(sideThreeLength)]);
+  Polygon.call(this, [new Side(sideOneLength), new Side(sideTwoLength), new Side(sideThreeLength)]);
 }
 
-Triangle.prototype = Object.create(Rectangle.prototype);
+Triangle.prototype = Object.create(Polygon.prototype);
 Triangle.prototype.constructor = Triangle;
 
 function Rectangle(width, height) {
