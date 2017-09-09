@@ -1,4 +1,8 @@
 function Point( {
-  this.x = 0;
-  this.y = 0;
+  this.x = x;
+  this.y = y;
 }
+
+  Point.prototype.toString = function(x, y) {
+    this.x
+  }
