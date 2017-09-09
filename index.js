@@ -12,7 +12,7 @@ function Shape(x, y) {
   this.y = 0;
 }
 
-Shape.prototype.move = function(x, y) {
+Shape.prototype.addToPlane = function(x, y) {
   this.x += x;
   this.y += y;
   console.info('Shape moved.');
