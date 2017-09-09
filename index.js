@@ -4,5 +4,5 @@ function Point( {
 }
 
   Point.prototype.toString = function(x, y) {
-    this.x
+    return("(" + this.x + "," + this.y + ")");
   }
