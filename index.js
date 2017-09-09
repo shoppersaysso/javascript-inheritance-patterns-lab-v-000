@@ -63,3 +63,5 @@ function Quadrilateral(sides) {
   this.sides = sides;
   this.sides.length = 4
 }
+
+Quadrilateral.prototype = Object.create(Polygon.prototype)
