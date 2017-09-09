@@ -7,13 +7,8 @@ function Point(x, y) {
     return("(" + this.x + "," + this.y + ")");
   }
 
-function Shape(x, y) {
-  this.x = 0;
-  this.y = 0;
-}
+function Shape() {}
 
 Shape.prototype.addToPlane = function(x, y) {
-  this.x += x;
-  this.y += y;
-  console.info('Shape moved.');
-};
+  this.position = new Point(x, y);
+}
