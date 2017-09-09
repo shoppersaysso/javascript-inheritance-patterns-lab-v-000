@@ -68,3 +68,6 @@ Quadrilateral.prototype.constructor = Quadrilateral;
 function Rectangle(longSide, shortSide) {
   Quadrilateral.call(this, [new Side(longSide), new Side(shortSide), new Side(longSide), new Side(shortSide)])
 }
+
+Rectangle.prototype = Object.create(Quadrilateral.prototype);
+Rectangle.prototype.constructor = Rectangle;
