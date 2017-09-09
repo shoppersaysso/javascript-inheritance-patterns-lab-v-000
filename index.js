@@ -67,7 +67,6 @@ Quadrilateral.prototype.constructor = Quadrilateral;
 
 function Triangle(sideOneLength, sideTwoLength, sideThreeLength) {
   Quadrilateral.call(this, [new Side(sideOneLength), new Side(sideTwoLength), new Side(sideThreeLength)]);
-  
 }
 
 function Rectangle(width, height) {
