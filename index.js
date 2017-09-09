@@ -20,3 +20,6 @@ Shape.prototype.move = function(x, y) {
 function Circle() {
   Shape.call(this)
 }
+
+Circle.prototype = Object.create(Shape.prototype);
+Circle.prototype.constructor = Circle;
