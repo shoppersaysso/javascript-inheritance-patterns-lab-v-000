@@ -35,5 +35,5 @@ Circle.prototype.area = function() {
   return(this.radius*Math.PI)
 }
 Circle.prototype.circumference = function() {
-
+  return(2 * this.radius * Math.PI)
 }
