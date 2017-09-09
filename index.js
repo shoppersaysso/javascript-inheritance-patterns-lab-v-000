@@ -28,3 +28,6 @@ function Circle(radius) {
 
 Circle.prototype = Object.create(Shape.prototype);
 Circle.prototype.constructor = Circle;
+Circle.prototype.diameter = function() {
+  return(this.radius*2)
+}
