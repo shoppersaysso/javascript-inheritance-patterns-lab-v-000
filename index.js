@@ -71,9 +71,6 @@ function Triangle(sideOneLength, sideTwoLength, sideThreeLength) {
 
 Triangle.prototype = Object.create(Rectangle.prototype);
 Triangle.prototype.constructor = Triangle;
-Rectangle.prototype.area = function() {
-  return(this.width * this.height);
-}
 
 function Rectangle(width, height) {
   Quadrilateral.call(this, width, height, width, height);
