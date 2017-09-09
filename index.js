@@ -1,3 +1,4 @@
-function Point(x, y) {
-  this.position = [x, y]
+function Point( {
+  this.x = 0;
+  this.y = 0;
 }
