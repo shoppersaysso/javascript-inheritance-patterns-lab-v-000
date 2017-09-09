@@ -65,11 +65,17 @@ function Quadrilateral(sideOneLength, sideTwoLength, sideThreeLength, sideFourLe
 Quadrilateral.prototype = Object.create(Polygon.prototype);
 Quadrilateral.prototype.constructor = Quadrilateral;
 
+function Triangle(sideOneLength, sideTwoLength, sideThreeLength) {
+  Quadrilateral.call(this, [new Side(sideOneLength), new Side(sideTwoLength), new Side(sideThreeLength)]);
+  
+}
+
 function Rectangle(width, height) {
   Quadrilateral.call(this, width, height, width, height);
   this.width = width;
   this.height = height;
 }
+
 
 Rectangle.prototype = Object.create(Quadrilateral.prototype);
 Rectangle.prototype.constructor = Rectangle;
@@ -85,5 +91,5 @@ function Square(side) {
 Square.prototype = Object.create(Rectangle.prototype);
 Square.prototype.contructor = Square;
 Square.prototype.listProperties = function() {
-  
+
 }
