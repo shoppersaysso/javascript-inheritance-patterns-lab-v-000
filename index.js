@@ -65,4 +65,4 @@ function Quadrilateral(sides) {
 
 Quadrilateral.prototype = Object.create(Polygon.prototype);
 Quadrilateral.prototype.constructor = Quadrilateral;
-Quadrilateral.prototype.
+Quadrilateral.prototype.numberOfSides = 4
