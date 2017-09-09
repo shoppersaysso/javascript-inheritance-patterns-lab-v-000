@@ -47,7 +47,7 @@ function Polygon(sides) {
 Polygon.prototype = Object.create(Shape.prototype);
 Polygon.prototype.constructor = Polygon;
 Polygon.prototype.perimeter = function() {
-  return(this.sides * 2);
+  return(sides.count);
 }
 
 function Quadrilateral(sides) {
