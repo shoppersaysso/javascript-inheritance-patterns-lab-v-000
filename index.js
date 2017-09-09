@@ -73,4 +73,6 @@ function Rectangle(width, height) {
 
 Rectangle.prototype = Object.create(Quadrilateral.prototype);
 Rectangle.prototype.constructor = Rectangle;
-Rectangle.prototype.area 
+Rectangle.prototype.area = function() {
+  
+}
